@@ -1,0 +1,12 @@
+[Unit]
+Description=My hubot container
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker start -a myhubot
+ExecStop=/usr/bin/docker stop myhubot 
+
+[Install]
+WantedBy=default.target
