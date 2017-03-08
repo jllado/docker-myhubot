@@ -4,7 +4,7 @@ This a pre-configured hubot image with slack adapter and jenkins plugin.
 
 Build and run the image:
 ```language-bash
-./install.sh
+./install.sh SLACK_TOKEN JENKINS_URL JENKINS_AUTH(USER:TOKEN)
 ```
 
 or you can stop and remove the image:
