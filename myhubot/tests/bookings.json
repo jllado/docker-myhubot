@@ -1,0 +1,1284 @@
+{
+  "bookedTrips": [
+    {
+      "id": "TRC-468",
+      "bookingReference": "TRC-468",
+      "status": "BOOKED",
+      "tryType": "MULTI",
+      "nightsCount": 6,
+      "destinationCount": 2,
+      "creationDate": "2016-12-24T20:44:59",
+      "startDate": "2017-02-03T00:00:00",
+      "endDate": "2017-02-09",
+      "adultCount": 3,
+      "childCount": 0,
+      "infantCount": 0,
+      "contactPerson": {
+        "id": "TRC-468-0-0",
+        "name": "EDGAR",
+        "lastName": "ORELLANA",
+        "requestedAge": 30,
+        "birthDate": "1965-07-18",
+        "documentNumber": "0102313079",
+        "courtesyTitle": "MISTER",
+        "documentType": "PASSPORT",
+        "email": "amparo.r@flyandbusinesstravel.com",
+        "phoneCountryCode": "593",
+        "phoneAreaCode": "99",
+        "phone": "5125647",
+        "country": "Ecuador",
+        "passportExpirationDate": "2019-04-19",
+        "address": {}
+      },
+      "user": {
+        "username": "amparo.r@flyandbusinesstravel.com",
+        "microsite": "default",
+        "name": "Amparo",
+        "surname": "Rojas",
+        "email": "amparo.r@flyandbusinesstravel.com",
+        "telephone": "593 9 95125647",
+        "country": {
+          "id": "EC",
+          "name": "Ecuador"
+        },
+        "active": true,
+        "agency": {
+          "externalId": "1",
+          "name": "Travelc B2C",
+          "addressText": "Crta. Valldemossa, Km 7.4 Parc Bit",
+          "postalCode": "07121",
+          "city": "palma de mallorca",
+          "region": "Baleares",
+          "province": "fsda",
+          "country": {
+            "id": "ES",
+            "name": "Spain"
+          },
+          "phoneNumber": "+ 34 971 557 243",
+          "documentNumber": ".",
+          "contactPersonName": ".",
+          "contactPersonLastName": "adfsfdas",
+          "email": "operaciones@travelcompositor.com",
+          "businessName": "Travel Compositor",
+          "fee": {
+            "onlyHotelGroundFee": {
+              "amount": 0,
+              "currency": "%"
+            },
+            "flightHotelGroundServicesFee": {
+              "amount": 0,
+              "currency": "%"
+            },
+            "multidestinationGroundServicesFee": {
+              "amount": 0,
+              "currency": "%"
+            },
+            "onlyTicketFee": {
+              "amount": 0,
+              "currency": "%"
+            },
+            "onlyFlightTransportFee": {
+              "amount": 0,
+              "currency": "%"
+            },
+            "flightHotelTransportFee": {
+              "amount": 0,
+              "currency": "%"
+            },
+            "multidestinationTransportFee": {
+              "amount": 0,
+              "currency": "%"
+            },
+            "onlyHotelFee": {
+              "amount": 0,
+              "currency": "%"
+            },
+            "flightHotelHotelFee": {
+              "amount": 0,
+              "currency": "%"
+            },
+            "multidestinationHotelFee": {
+              "amount": 0,
+              "currency": "%"
+            }
+          },
+          "taxes": 21,
+          "b2c": false,
+          "invoiceType": "COMMISSION",
+          "active": true,
+          "deferredPaymentAllowed": true,
+          "deferredDays": -5,
+          "deferredLimit": 9999,
+          "providerConfigs": [],
+          "socialNetworks": {
+            "twitterUrl": "https://twitter.com/TravelC_online",
+            "youtubeUrl": "https://www.youtube.com/channel/UC7fnIOjOmM55eHolZtlIpsw"
+          }
+        },
+        "b2c": true,
+        "providerConfigs": []
+      },
+      "payment": {
+        "id": 2224,
+        "orderNumber": "1612pU5QGMag",
+        "amount": 4977.06,
+        "currency": "EUR",
+        "paymentType": "RETAIL_PRICE",
+        "deferredPayment": false,
+        "deferredAmount": 0,
+        "remainderCount": 0
+      },
+      "pricebreakdown": {
+        "netProvider": {
+          "microsite": {
+            "amount": 4638.540000000001,
+            "currency": "EUR"
+          },
+          "operator": {
+            "amount": 4638.540000000001,
+            "currency": "EUR"
+          }
+        },
+        "operatorFee": {
+          "microsite": {
+            "amount": 263.8629981211157,
+            "currency": "EUR"
+          },
+          "operator": {
+            "amount": 263.8629981211157,
+            "currency": "EUR"
+          }
+        },
+        "paymentFee": {
+          "microsite": {
+            "amount": 74.6558832201185,
+            "currency": "EUR"
+          },
+          "operator": {
+            "amount": 74.6558832201185,
+            "currency": "EUR"
+          }
+        },
+        "micrositeFee": {
+          "microsite": {
+            "amount": 0,
+            "currency": "EUR"
+          },
+          "operator": {
+            "amount": 0,
+            "currency": "EUR"
+          }
+        },
+        "agencyFee": {
+          "microsite": {
+            "amount": 0,
+            "currency": "EUR"
+          },
+          "operator": {
+            "amount": 0,
+            "currency": "EUR"
+          }
+        }
+      },
+      "distribution": [
+        {
+          "id": "TRC-468-0",
+          "person": [
+            {
+              "id": "TRC-468-0-0",
+              "name": "EDGAR",
+              "lastName": "ORELLANA",
+              "requestedAge": 30,
+              "birthDate": "1965-07-18",
+              "documentNumber": "0102313079",
+              "courtesyTitle": "MISTER",
+              "documentType": "PASSPORT",
+              "email": "amparo.r@flyandbusinesstravel.com",
+              "phoneCountryCode": "593",
+              "phoneAreaCode": "99",
+              "phone": "5125647",
+              "country": "Ecuador",
+              "passportExpirationDate": "2019-04-19",
+              "address": {}
+            },
+            {
+              "id": "TRC-468-0-1",
+              "name": "JULIA ERNESTINA",
+              "lastName": "ONCE",
+              "requestedAge": 30,
+              "birthDate": "1958-07-19",
+              "documentNumber": "513579803",
+              "courtesyTitle": "MRS",
+              "documentType": "PASSPORT",
+              "phoneAreaCode": "",
+              "phone": "0",
+              "country": "United States of America",
+              "passportExpirationDate": "2024-05-07",
+              "address": {}
+            }
+          ]
+        },
+        {
+          "id": "TRC-468-1",
+          "person": [
+            {
+              "id": "TRC-468-1-0",
+              "name": "CHRISTIAN",
+              "lastName": "ORELLANA",
+              "requestedAge": 30,
+              "birthDate": "1995-06-12",
+              "documentNumber": "212179722",
+              "courtesyTitle": "MISTER",
+              "documentType": "PASSPORT",
+              "phoneAreaCode": "",
+              "phone": "0",
+              "country": "United States of America",
+              "passportExpirationDate": "2024-05-08",
+              "address": {}
+            }
+          ]
+        }
+      ],
+      "hotelservice": [
+        {
+          "id": "TRC-468-0",
+          "bookingReference": "290-281687",
+          "provider": "APITUDE_HOTELS",
+          "startDate": "2017-02-03T00:00:00",
+          "status": "BOOKED",
+          "hotelId": "173857",
+          "hotelName": "Four Points By Sheraton Havana",
+          "nights": 3,
+          "mealPlan": "BB",
+          "locationName": " LA HABANA",
+          "destinationCode": "HAV",
+          "destinationName": "Havana",
+          "pricebreakdown": {
+            "netProvider": {
+              "microsite": {
+                "amount": 1494.36,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 1494.36,
+                "currency": "EUR"
+              }
+            },
+            "operatorFee": {
+              "microsite": {
+                "amount": 79.91229946524062,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 79.91229946524062,
+                "currency": "EUR"
+              }
+            },
+            "paymentFee": {
+              "microsite": {
+                "amount": 23.973689839572184,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 23.973689839572184,
+                "currency": "EUR"
+              }
+            },
+            "micrositeFee": {
+              "microsite": {
+                "amount": 0,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0,
+                "currency": "EUR"
+              }
+            },
+            "agencyFee": {
+              "microsite": {
+                "amount": 0,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0,
+                "currency": "EUR"
+              }
+            },
+            "netProviderPrice": {
+              "amount": 1494.36,
+              "currency": "EUR"
+            }
+          },
+          "room": [
+            {
+              "id": "TRC-468-0-0",
+              "roomType": "DBL-CN1"
+            },
+            {
+              "id": "TRC-468-0-1",
+              "roomType": "SGL-CN1"
+            }
+          ]
+        },
+        {
+          "id": "TRC-468-1",
+          "bookingReference": "290-281686",
+          "provider": "APITUDE_HOTELS",
+          "startDate": "2017-02-06T00:00:00",
+          "status": "BOOKED",
+          "hotelId": "63362",
+          "hotelName": "Melia Las Americas",
+          "nights": 3,
+          "mealPlan": "AI",
+          "locationName": "VARADERO",
+          "destinationCode": "VRA",
+          "destinationName": "Varadero",
+          "pricebreakdown": {
+            "netProvider": {
+              "microsite": {
+                "amount": 1732.98,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 1732.98,
+                "currency": "EUR"
+              }
+            },
+            "operatorFee": {
+              "microsite": {
+                "amount": 92.67272727272727,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 92.67272727272727,
+                "currency": "EUR"
+              }
+            },
+            "paymentFee": {
+              "microsite": {
+                "amount": 27.801818181818177,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 27.801818181818177,
+                "currency": "EUR"
+              }
+            },
+            "micrositeFee": {
+              "microsite": {
+                "amount": 0,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0,
+                "currency": "EUR"
+              }
+            },
+            "agencyFee": {
+              "microsite": {
+                "amount": 0,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0,
+                "currency": "EUR"
+              }
+            },
+            "netProviderPrice": {
+              "amount": 1732.98,
+              "currency": "EUR"
+            }
+          },
+          "room": [
+            {
+              "id": "TRC-468-1-0",
+              "roomType": "DBL-CN1"
+            },
+            {
+              "id": "TRC-468-1-1",
+              "roomType": "SGL-CN1"
+            }
+          ]
+        }
+      ],
+      "transportservice": [
+        {
+          "id": "TRC-468-0",
+          "bookingReference": "1LZ450",
+          "provider": "GALILEO",
+          "startDate": "2017-02-03T08:00:00",
+          "status": "BOOKED",
+          "providerBookingReference": "100E84",
+          "departureAirport": "LGA",
+          "arrivalAirport": "HAV",
+          "endDate": "2017-02-03T14:34:00",
+          "onewayPrice": true,
+          "pricebreakdown": {
+            "netProvider": {
+              "microsite": {
+                "amount": 539.01,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 539.01,
+                "currency": "EUR"
+              }
+            },
+            "operatorFee": {
+              "microsite": {
+                "amount": 34.9628108108108,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 34.9628108108108,
+                "currency": "EUR"
+              }
+            },
+            "paymentFee": {
+              "microsite": {
+                "amount": 8.7407027027027,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 8.7407027027027,
+                "currency": "EUR"
+              }
+            },
+            "micrositeFee": {
+              "microsite": {
+                "amount": 0,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0,
+                "currency": "EUR"
+              }
+            },
+            "agencyFee": {
+              "microsite": {
+                "amount": 0,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0,
+                "currency": "EUR"
+              }
+            },
+            "netProviderPrice": {
+              "amount": 539.01,
+              "currency": "EUR"
+            }
+          },
+          "segment": [
+            {
+              "departureAirport": "LGA",
+              "arrivalAirport": "MIA",
+              "departureDate": "2017-02-03T08:00:00",
+              "arrivalDate": "2017-02-03T11:21:00",
+              "marketingAirlineCode": "AA",
+              "operatingAirlineCode": "AA",
+              "flightNumber": "1410",
+              "bookingClass": "N"
+            },
+            {
+              "departureAirport": "MIA",
+              "arrivalAirport": "HAV",
+              "departureDate": "2017-02-03T13:21:00",
+              "arrivalDate": "2017-02-03T14:34:00",
+              "marketingAirlineCode": "AA",
+              "operatingAirlineCode": "AA",
+              "flightNumber": "1345",
+              "bookingClass": "N"
+            }
+          ]
+        },
+        {
+          "id": "TRC-468-2",
+          "bookingReference": "1LZ44A",
+          "provider": "GALILEO",
+          "startDate": "2017-02-09T12:15:00",
+          "status": "BOOKED",
+          "providerBookingReference": "0WZ7FU",
+          "departureAirport": "VRA",
+          "arrivalAirport": "LGA",
+          "endDate": "2017-02-09T19:09:00",
+          "onewayPrice": true,
+          "pricebreakdown": {
+            "netProvider": {
+              "microsite": {
+                "amount": 849.42,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 849.42,
+                "currency": "EUR"
+              }
+            },
+            "operatorFee": {
+              "microsite": {
+                "amount": 55.097513513513505,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 55.097513513513505,
+                "currency": "EUR"
+              }
+            },
+            "paymentFee": {
+              "microsite": {
+                "amount": 13.774378378378376,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 13.774378378378376,
+                "currency": "EUR"
+              }
+            },
+            "micrositeFee": {
+              "microsite": {
+                "amount": 0,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0,
+                "currency": "EUR"
+              }
+            },
+            "agencyFee": {
+              "microsite": {
+                "amount": 0,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0,
+                "currency": "EUR"
+              }
+            },
+            "netProviderPrice": {
+              "amount": 849.42,
+              "currency": "EUR"
+            }
+          },
+          "segment": [
+            {
+              "departureAirport": "VRA",
+              "arrivalAirport": "MIA",
+              "departureDate": "2017-02-09T12:15:00",
+              "arrivalDate": "2017-02-09T13:19:00",
+              "marketingAirlineCode": "AA",
+              "operatingAirlineCode": "AA",
+              "flightNumber": "2742",
+              "bookingClass": "V"
+            },
+            {
+              "departureAirport": "MIA",
+              "arrivalAirport": "LGA",
+              "departureDate": "2017-02-09T16:13:00",
+              "arrivalDate": "2017-02-09T19:09:00",
+              "marketingAirlineCode": "AA",
+              "operatingAirlineCode": "AA",
+              "flightNumber": "88",
+              "bookingClass": "V"
+            }
+          ]
+        }
+      ],
+      "ticketservice": [],
+      "insuranceservice": [
+        {
+          "id": "TRC-468-0",
+          "bookingReference": "1.381.770",
+          "provider": "MANDATORY_INSURANCE",
+          "startDate": "2017-02-03T00:00:00",
+          "status": "BOOKED",
+          "insuranceCode": "110",
+          "insuranceName": "Insurance (Seguro Inclusión Intermundial) - Region (Continental) - Days(6)",
+          "pricebreakdown": {
+            "netProvider": {
+              "microsite": {
+                "amount": 22.77,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 22.77,
+                "currency": "EUR"
+              }
+            },
+            "operatorFee": {
+              "microsite": {
+                "amount": 1.2176470588235293,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 1.2176470588235293,
+                "currency": "EUR"
+              }
+            },
+            "paymentFee": {
+              "microsite": {
+                "amount": 0.3652941176470587,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0.3652941176470587,
+                "currency": "EUR"
+              }
+            },
+            "micrositeFee": {
+              "microsite": {
+                "amount": 0,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0,
+                "currency": "EUR"
+              }
+            },
+            "agencyFee": {
+              "microsite": {
+                "amount": 0,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0,
+                "currency": "EUR"
+              }
+            },
+            "netProviderPrice": {
+              "amount": 22.77,
+              "currency": "EUR"
+            }
+          }
+        }
+      ],
+      "transferservice": [],
+      "carservice": []
+    },
+    {
+      "id": "TRC-552",
+      "bookingReference": "TRC-552",
+      "status": "BOOKED",
+      "tryType": "MULTI",
+      "nightsCount": 6,
+      "destinationCount": 2,
+      "creationDate": "2017-02-24T15:34:17",
+      "startDate": "2017-04-15T00:00:00",
+      "endDate": "2017-04-21",
+      "adultCount": 2,
+      "childCount": 0,
+      "infantCount": 0,
+      "contactPerson": {
+        "id": "TRC-552-0-0",
+        "name": "ROMULO GONZALO",
+        "lastName": "QUIJIJE",
+        "requestedAge": 30,
+        "birthDate": "1962-03-18",
+        "documentNumber": "557627593",
+        "courtesyTitle": "MISTER",
+        "documentType": "PASSPORT",
+        "email": "amparo.r@flyandbusinesstravel.com",
+        "phoneCountryCode": "593",
+        "phoneAreaCode": "99",
+        "phone": "5125647",
+        "country": "United States of America",
+        "passportExpirationDate": "2026-10-31",
+        "address": {}
+      },
+      "user": {
+        "username": "amparo.r@flyandbusinesstravel.com",
+        "microsite": "default",
+        "name": "Amparo",
+        "surname": "Rojas",
+        "email": "amparo.r@flyandbusinesstravel.com",
+        "telephone": "593 9 95125647",
+        "country": {
+          "id": "EC",
+          "name": "Ecuador"
+        },
+        "active": true,
+        "agency": {
+          "externalId": "1",
+          "name": "Travelc B2C",
+          "addressText": "Crta. Valldemossa, Km 7.4 Parc Bit",
+          "postalCode": "07121",
+          "city": "palma de mallorca",
+          "region": "Baleares",
+          "province": "fsda",
+          "country": {
+            "id": "ES",
+            "name": "Spain"
+          },
+          "phoneNumber": "+ 34 971 557 243",
+          "documentNumber": ".",
+          "contactPersonName": ".",
+          "contactPersonLastName": "adfsfdas",
+          "email": "operaciones@travelcompositor.com",
+          "businessName": "Travel Compositor",
+          "fee": {
+            "onlyHotelGroundFee": {
+              "amount": 0,
+              "currency": "%"
+            },
+            "flightHotelGroundServicesFee": {
+              "amount": 0,
+              "currency": "%"
+            },
+            "multidestinationGroundServicesFee": {
+              "amount": 0,
+              "currency": "%"
+            },
+            "onlyTicketFee": {
+              "amount": 0,
+              "currency": "%"
+            },
+            "onlyFlightTransportFee": {
+              "amount": 0,
+              "currency": "%"
+            },
+            "flightHotelTransportFee": {
+              "amount": 0,
+              "currency": "%"
+            },
+            "multidestinationTransportFee": {
+              "amount": 0,
+              "currency": "%"
+            },
+            "onlyHotelFee": {
+              "amount": 0,
+              "currency": "%"
+            },
+            "flightHotelHotelFee": {
+              "amount": 0,
+              "currency": "%"
+            },
+            "multidestinationHotelFee": {
+              "amount": 0,
+              "currency": "%"
+            }
+          },
+          "taxes": 21,
+          "b2c": false,
+          "invoiceType": "COMMISSION",
+          "active": true,
+          "deferredPaymentAllowed": true,
+          "deferredDays": -5,
+          "deferredLimit": 9999,
+          "providerConfigs": [],
+          "socialNetworks": {
+            "twitterUrl": "https://twitter.com/TravelC_online",
+            "youtubeUrl": "https://www.youtube.com/channel/UC7fnIOjOmM55eHolZtlIpsw"
+          }
+        },
+        "b2c": true,
+        "providerConfigs": []
+      },
+      "payment": {
+        "id": 3193,
+        "orderNumber": "170224wW3Zo8U0gM",
+        "amount": 1754.14,
+        "currency": "EUR",
+        "paymentType": "RETAIL_PRICE",
+        "deferredPayment": false,
+        "deferredAmount": 0,
+        "remainderCount": 0
+      },
+      "pricebreakdown": {
+        "netProvider": {
+          "microsite": {
+            "amount": 1636.5900000000001,
+            "currency": "EUR"
+          },
+          "operator": {
+            "amount": 1636.5900000000001,
+            "currency": "EUR"
+          }
+        },
+        "operatorFee": {
+          "microsite": {
+            "amount": 91.2407671628848,
+            "currency": "EUR"
+          },
+          "operator": {
+            "amount": 91.2407671628848,
+            "currency": "EUR"
+          }
+        },
+        "paymentFee": {
+          "microsite": {
+            "amount": 26.31214366237895,
+            "currency": "EUR"
+          },
+          "operator": {
+            "amount": 26.31214366237895,
+            "currency": "EUR"
+          }
+        },
+        "micrositeFee": {
+          "microsite": {
+            "amount": 0,
+            "currency": "EUR"
+          },
+          "operator": {
+            "amount": 0,
+            "currency": "EUR"
+          }
+        },
+        "agencyFee": {
+          "microsite": {
+            "amount": 0,
+            "currency": "EUR"
+          },
+          "operator": {
+            "amount": 0,
+            "currency": "EUR"
+          }
+        }
+      },
+      "distribution": [
+        {
+          "id": "TRC-552-0",
+          "person": [
+            {
+              "id": "TRC-552-0-0",
+              "name": "ROMULO GONZALO",
+              "lastName": "QUIJIJE",
+              "requestedAge": 30,
+              "birthDate": "1962-03-18",
+              "documentNumber": "557627593",
+              "courtesyTitle": "MISTER",
+              "documentType": "PASSPORT",
+              "email": "amparo.r@flyandbusinesstravel.com",
+              "phoneCountryCode": "593",
+              "phoneAreaCode": "99",
+              "phone": "5125647",
+              "country": "United States of America",
+              "passportExpirationDate": "2026-10-31",
+              "address": {}
+            },
+            {
+              "id": "TRC-552-0-1",
+              "name": "RAQUEL",
+              "lastName": "QUIJIJE",
+              "requestedAge": 30,
+              "birthDate": "1963-06-13",
+              "documentNumber": "550389028",
+              "courtesyTitle": "MRS",
+              "documentType": "PASSPORT",
+              "phoneAreaCode": "",
+              "phone": "0",
+              "country": "United States of America",
+              "passportExpirationDate": "2026-10-16",
+              "address": {}
+            }
+          ]
+        }
+      ],
+      "hotelservice": [
+        {
+          "id": "TRC-552-0",
+          "bookingReference": "26674099",
+          "provider": "HOTUSA",
+          "startDate": "2017-04-15T00:00:00",
+          "status": "BOOKED",
+          "hotelId": "HTS-974571",
+          "hotelName": "Hotel Neptuno Triton",
+          "nights": 3,
+          "mealPlan": "BB",
+          "locationName": "HAVANA",
+          "destinationCode": "HAV",
+          "destinationName": "Havana",
+          "pricebreakdown": {
+            "netProvider": {
+              "microsite": {
+                "amount": 286.29,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 286.29,
+                "currency": "EUR"
+              }
+            },
+            "operatorFee": {
+              "microsite": {
+                "amount": 15.309625668449199,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 15.309625668449199,
+                "currency": "EUR"
+              }
+            },
+            "paymentFee": {
+              "microsite": {
+                "amount": 4.592887700534759,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 4.592887700534759,
+                "currency": "EUR"
+              }
+            },
+            "micrositeFee": {
+              "microsite": {
+                "amount": 0,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0,
+                "currency": "EUR"
+              }
+            },
+            "agencyFee": {
+              "microsite": {
+                "amount": 0,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0,
+                "currency": "EUR"
+              }
+            },
+            "netProviderPrice": {
+              "amount": 286.29,
+              "currency": "EUR"
+            }
+          },
+          "room": [
+            {
+              "id": "TRC-552-0-0",
+              "roomType": "DBT-CN1"
+            }
+          ]
+        },
+        {
+          "id": "TRC-552-1",
+          "bookingReference": "4549404",
+          "provider": "TOTALSTAY",
+          "startDate": "2017-04-18T15:28:38",
+          "status": "BOOKED",
+          "hotelId": "HTS-971129",
+          "hotelName": "Roc Barlovento",
+          "nights": 3,
+          "mealPlan": "AI",
+          "locationName": "VARADERO",
+          "destinationCode": "VRA",
+          "destinationName": "Varadero",
+          "pricebreakdown": {
+            "netProvider": {
+              "microsite": {
+                "amount": 453,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 453,
+                "currency": "EUR"
+              }
+            },
+            "operatorFee": {
+              "microsite": {
+                "amount": 24.22459893048128,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 24.22459893048128,
+                "currency": "EUR"
+              }
+            },
+            "paymentFee": {
+              "microsite": {
+                "amount": 7.267379679144384,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 7.267379679144384,
+                "currency": "EUR"
+              }
+            },
+            "micrositeFee": {
+              "microsite": {
+                "amount": 0,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0,
+                "currency": "EUR"
+              }
+            },
+            "agencyFee": {
+              "microsite": {
+                "amount": 0,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0,
+                "currency": "EUR"
+              }
+            },
+            "netProviderPrice": {
+              "amount": 453,
+              "currency": "EUR"
+            }
+          },
+          "room": [
+            {
+              "id": "TRC-552-1-0",
+              "roomType": "NOT_APPLICABLE"
+            }
+          ]
+        }
+      ],
+      "transportservice": [
+        {
+          "id": "TRC-552-0",
+          "bookingReference": "QL1H3K",
+          "provider": "GALILEO",
+          "startDate": "2017-04-15T05:45:00",
+          "status": "BOOKED",
+          "providerBookingReference": "MARCMU",
+          "departureAirport": "LGA",
+          "arrivalAirport": "HAV",
+          "endDate": "2017-04-15T16:30:00",
+          "onewayPrice": true,
+          "pricebreakdown": {
+            "netProvider": {
+              "microsite": {
+                "amount": 326.86,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 326.86,
+                "currency": "EUR"
+              }
+            },
+            "operatorFee": {
+              "microsite": {
+                "amount": 21.201729729729728,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 21.201729729729728,
+                "currency": "EUR"
+              }
+            },
+            "paymentFee": {
+              "microsite": {
+                "amount": 5.300432432432432,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 5.300432432432432,
+                "currency": "EUR"
+              }
+            },
+            "micrositeFee": {
+              "microsite": {
+                "amount": 0,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0,
+                "currency": "EUR"
+              }
+            },
+            "agencyFee": {
+              "microsite": {
+                "amount": 0,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0,
+                "currency": "EUR"
+              }
+            },
+            "netProviderPrice": {
+              "amount": 326.86,
+              "currency": "EUR"
+            }
+          },
+          "segment": [
+            {
+              "departureAirport": "LGA",
+              "arrivalAirport": "IAH",
+              "departureDate": "2017-04-15T05:45:00",
+              "arrivalDate": "2017-04-15T08:38:00",
+              "marketingAirlineCode": "UA",
+              "operatingAirlineCode": "UA",
+              "flightNumber": "657",
+              "bookingClass": "L"
+            },
+            {
+              "departureAirport": "IAH",
+              "arrivalAirport": "HAV",
+              "departureDate": "2017-04-15T12:55:00",
+              "arrivalDate": "2017-04-15T16:30:00",
+              "marketingAirlineCode": "UA",
+              "operatingAirlineCode": "UA",
+              "flightNumber": "1506",
+              "bookingClass": "L"
+            }
+          ]
+        },
+        {
+          "id": "TRC-552-2",
+          "bookingReference": "XIIBPD",
+          "provider": "MYSTIFLY",
+          "startDate": "2017-04-21T12:50:00",
+          "status": "BOOKED",
+          "providerBookingReference": "MF95128417",
+          "departureAirport": "VRA",
+          "arrivalAirport": "LGA",
+          "endDate": "2017-04-21T21:54:00",
+          "onewayPrice": true,
+          "pricebreakdown": {
+            "netProvider": {
+              "microsite": {
+                "amount": 555.26,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 555.26,
+                "currency": "EUR"
+              }
+            },
+            "operatorFee": {
+              "microsite": {
+                "amount": 29.69304812834224,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 29.69304812834224,
+                "currency": "EUR"
+              }
+            },
+            "paymentFee": {
+              "microsite": {
+                "amount": 8.907914438502672,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 8.907914438502672,
+                "currency": "EUR"
+              }
+            },
+            "micrositeFee": {
+              "microsite": {
+                "amount": 0,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0,
+                "currency": "EUR"
+              }
+            },
+            "agencyFee": {
+              "microsite": {
+                "amount": 0,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0,
+                "currency": "EUR"
+              }
+            },
+            "netProviderPrice": {
+              "amount": 555.26,
+              "currency": "EUR"
+            }
+          },
+          "segment": [
+            {
+              "departureAirport": "VRA",
+              "arrivalAirport": "MIA",
+              "departureDate": "2017-04-21T12:50:00",
+              "arrivalDate": "2017-04-21T13:55:00",
+              "marketingAirlineCode": "AA",
+              "operatingAirlineCode": "AA",
+              "flightNumber": "2742",
+              "bookingClass": "V"
+            },
+            {
+              "departureAirport": "MIA",
+              "arrivalAirport": "LGA",
+              "departureDate": "2017-04-21T19:00:00",
+              "arrivalDate": "2017-04-21T21:54:00",
+              "marketingAirlineCode": "AA",
+              "operatingAirlineCode": "AA",
+              "flightNumber": "1367",
+              "bookingClass": "V"
+            }
+          ]
+        }
+      ],
+      "ticketservice": [],
+      "insuranceservice": [
+        {
+          "id": "TRC-552-0",
+          "bookingReference": "1.463.038",
+          "provider": "MANDATORY_INSURANCE",
+          "startDate": "2017-04-15T00:00:00",
+          "status": "BOOKED",
+          "insuranceCode": "110",
+          "insuranceName": "Insurance (Seguro Inclusión Intermundial) - Region (Continental) - Days(6)",
+          "pricebreakdown": {
+            "netProvider": {
+              "microsite": {
+                "amount": 15.18,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 15.18,
+                "currency": "EUR"
+              }
+            },
+            "operatorFee": {
+              "microsite": {
+                "amount": 0.8117647058823527,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0.8117647058823527,
+                "currency": "EUR"
+              }
+            },
+            "paymentFee": {
+              "microsite": {
+                "amount": 0.2435294117647058,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0.2435294117647058,
+                "currency": "EUR"
+              }
+            },
+            "micrositeFee": {
+              "microsite": {
+                "amount": 0,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0,
+                "currency": "EUR"
+              }
+            },
+            "agencyFee": {
+              "microsite": {
+                "amount": 0,
+                "currency": "EUR"
+              },
+              "operator": {
+                "amount": 0,
+                "currency": "EUR"
+              }
+            },
+            "netProviderPrice": {
+              "amount": 15.18,
+              "currency": "EUR"
+            }
+          }
+        }
+      ],
+      "transferservice": [],
+      "carservice": []
+    }
+  ]
+}
