@@ -1,0 +1,14 @@
+version: '2'
+services:
+  hubot:
+    build: .
+    links:
+        - mongo
+    environment:
+        - HUBOT_SLACK_TOKEN
+        - HUBOT_JENKINS_URL
+        - HUBOT_JENKINS_AUTH
+        - TRAVELC_USER
+        - TRAVELC_PASS
+  mongo:
+      image: mongo:3.4.2 

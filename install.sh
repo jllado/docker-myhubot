@@ -1,4 +1,8 @@
 #!/bin/sh
-docker build -t myhubot .
-docker run -e HUBOT_SLACK_TOKEN=$1 -e HUBOT_JENKINS_URL=$2 -e HUBOT_JENKINS_AUTH=$3 -e TRAVELC_USER=$4 -e TRAVELC_PASS=$5 --name=myhubot -d myhubot
+export HUBOT_SLACK_TOKEN=$1
+export HUBOT_JENKINS_URL=$2
+export HUBOT_JENKINS_AUTH=$3
+export TRAVELC_USER=$4
+export TRAVELC_PASS=$5
+docker-compose up -d
 

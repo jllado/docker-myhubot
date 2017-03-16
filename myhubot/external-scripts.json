@@ -1,5 +1,6 @@
 [
   "hubot-diagnostics",
+  "hubot-mongodb-brain",
   "hubot-help",
   "hubot-google-images",
   "hubot-jenkins-enhanced",
