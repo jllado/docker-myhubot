@@ -17,7 +17,7 @@ module.exports = function(robot) {
                 let auth = JSON.parse(body);
                 let yesterday = clock.yesterday();
                 robot.http('http://online.travelcompositor.com/resources/booking/getBookings')
-                .query({'operator': 'travelc', 'from': clock.yesterday(), 'to': yesterday})
+                .query({'from': clock.yesterday(), 'to': yesterday})
                 .header('Accept', 'application/json')
                 .header('auth-token', auth.token)
                 .get()(function(err, resp, body) {

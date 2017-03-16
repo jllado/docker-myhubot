@@ -23,7 +23,7 @@ describe('Daily bookings', function() {
         'auth-token': 'wtftoken'
       }
     }).get('/resources/booking/getBookings')
-	  .query({operator: 'travelc', from: '20170311', to: '20170311'})
+	  .query({from: '20170311', to: '20170311'})
       .replyWithFile(200, __dirname + '/bookings.json');
   });
 
