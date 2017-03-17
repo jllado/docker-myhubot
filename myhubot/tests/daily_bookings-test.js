@@ -35,6 +35,7 @@ describe('Daily bookings', function() {
 
   context('user says yesterday bookings', function() {
 	beforeEach(function() {
+    	this.room.robot.brain.set('record', 30);
 		return co(function*() {
             return yield this.room.user.say('whatever_user', '@hubot yesterday bookings');
         }.bind(this));
@@ -56,11 +57,39 @@ describe('Daily bookings', function() {
             return yield this.room.user.say('whatever_user', '@hubot yesterday bookings');
         }.bind(this));
 	});
-  	it('given zero bookings should show a sad face', function() {
+    afterEach(function() {
+        bookings_mapper.count.restore();
+    });
+  	it('should show a sad face', function() {
     	expect(this.room.messages).to.eql([
         	['whatever_user', '@hubot yesterday bookings'], 
         	['hubot', 'Ayer tuvimos 0 reservas :cry:'], 
     	]);
   	});
+  });
+  context('user says yesterday bookings given new daily bookings record', function() {
+	beforeEach(function() {
+    	this.room.robot.brain.set('record', 10);
+	    bookings_mapper = require('../domain/bookings_mapper.js');
+	    sinon.stub(bookings_mapper, "count", function() {
+		    return 16;
+	    });
+		return co(function*() {
+            return yield this.room.user.say('whatever_user', '@hubot yesterday bookings');
+        }.bind(this));
+	});
+    afterEach(function() {
+        bookings_mapper.count.restore();
+    });
+  	it('should announce the new record', function() {
+    	expect(this.room.messages).to.eql([
+        	['whatever_user', '@hubot yesterday bookings'], 
+        	['hubot', 'Ayer tuvimos 16 reservas :smile:'], 
+        	['hubot', '¡Hemos batido el record de reservas diarias! :muscle:'], 
+    	]);
+  	});
+  	it('should save the new record', function() {
+    	expect(this.room.robot.brain.get('record')).to.eql(16);
+   	});
   });
 });

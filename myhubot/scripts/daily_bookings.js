@@ -4,7 +4,9 @@
 
 var cron = require('node-cron');
 var clock = require('../domain/clock.js');
+var bookings_mapper = require('../domain/bookings_mapper.js')
 var phrase_builder = require('../domain/phrase_builder.js');
+var bookings_record = require('../domain/bookings_record.js');
 var travelc_user = process.env.TRAVELC_USER || 'user';
 var travelc_pass = process.env.TRAVELC_PASS || 'pass';
 
@@ -22,7 +24,13 @@ module.exports = function(robot) {
                 .header('auth-token', auth.token)
                 .get()(function(err, resp, body) {
                     let bookings = JSON.parse(body);
-                    robot.send({room: room}, phrase_builder.build(bookings));
+                    let bookings_count = bookings_mapper.count(bookings);
+                    robot.send({room: room}, phrase_builder.build(bookings_count));
+                    let record = bookings_record.get(robot);
+                    if (bookings_count > record) {
+                        robot.send({room: room}, '¡Hemos batido el record de reservas diarias! :muscle:');
+                        bookings_record.save(robot, bookings_count);
+                    }
                 });
             });
     };
