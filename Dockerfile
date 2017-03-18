@@ -25,7 +25,7 @@ ENV HUBOT_JENKINS_URL=http://localhost:8080/jenkins/
 ENV HUBOT_JENKINS_AUTH=user:token
 ENV TRAVELC_USER=user
 ENV TRAVELC_PASS=pass
-ENV MONGODB_URL=mongodb://dockermyhubot_mongo_1/hubot-brain
+ENV MONGODB_URL=mongodb://myhubot_mongo_1/hubot-brain
 
 # create hubot
 RUN yo hubot --adapter ${HUBOT_ADAPTER} --owner ${HUBOT_OWNER} --name ${HUBOT_NAME} --description ${HUBOT_DESCRIPTION} --defaults --no-insight
