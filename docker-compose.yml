@@ -2,6 +2,7 @@ version: '2'
 services:
   hubot:
     build: .
+    restart: always
     links:
         - mongo
     environment:
@@ -11,4 +12,5 @@ services:
         - TRAVELC_USER
         - TRAVELC_PASS
   mongo:
-      image: mongo:3.4.2 
+    image: mongo:3.4.2 
+    restart: always

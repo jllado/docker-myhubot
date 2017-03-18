@@ -21,16 +21,3 @@ More info in https://slackapi.github.io/hubot-slack/
 
 The API token is available in your personal configuration page. Click your name on the top right corner on every page, then click "Configure" to see your API token. (The URL $root/me/configure is a good shortcut.) You can also change your API token from here.
 
-### Ubuntu service
-
-Create the service:
-
-```language-bash
-sudo ./install_service.sh
-```
-
-Remove the service:
-```language-bash
-sudo ./uninstall_service.sh
-```
-
