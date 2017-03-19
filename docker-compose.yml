@@ -14,3 +14,5 @@ services:
   mongo:
     image: mongo:3.4.2 
     restart: always
+    volumes:
+        - /opt/servers/mongodb/data:/data/db
