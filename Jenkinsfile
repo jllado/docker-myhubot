@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage ('Initialize') {
+        stage ('Delete previous') {
             steps {
                 sh './uninstall.sh'
             }
