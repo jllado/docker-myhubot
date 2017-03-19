@@ -6,7 +6,7 @@ services:
     links:
         - mongo
     environment:
-        - HUBOT_SLACK_TOKEN
+        - TELEGRAM_TOKEN
         - HUBOT_JENKINS_URL
         - HUBOT_JENKINS_AUTH
         - TRAVELC_USER

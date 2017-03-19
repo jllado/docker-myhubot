@@ -1,5 +1,5 @@
 {
-  "name": "skynet",
+  "name": "kungfumasters_bot",
   "version": "0.0.0",
   "private": true,
   "author": "Juan Lladó <jllado@gmail.com>",
@@ -17,7 +17,7 @@
     "hubot-rules": "^0.1.1",
     "hubot-scripts": "^2.17.2",
     "hubot-shipit": "^0.2.0",
-    "hubot-slack": "^4.3.3"
+    "hubot-telegram": "^0.1.2"
   },
   "engines": {
     "node": "0.10.x"

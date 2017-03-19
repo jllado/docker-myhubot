@@ -17,10 +17,10 @@ WORKDIR $HUBOT_HOME
 # optionally override variables with docker run -e HUBOT_...
 # Modify ./ENV file to override these options
 ENV HUBOT_OWNER hubot
-ENV HUBOT_NAME hubot
-ENV HUBOT_ADAPTER slack
+ENV HUBOT_NAME kungfumasters_bot
+ENV HUBOT_ADAPTER telegram
 ENV HUBOT_DESCRIPTION Just a friendly robot
-ENV HUBOT_SLACK_TOKEN=xoxb-XXXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXX
+ENV TELEGRAM_TOKEN=xxxxxx:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ENV HUBOT_JENKINS_URL=http://localhost:8080/jenkins/
 ENV HUBOT_JENKINS_AUTH=user:token
 ENV TRAVELC_USER=user
