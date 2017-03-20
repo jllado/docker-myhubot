@@ -37,7 +37,7 @@ module.exports = function(robot) {
     cron.schedule('00 09 * * *', function() {
         yesterday_bookings('-197523822'); //telegram group id
     });
-    robot.respond(/yesterday bookings/, function(msg) {
+    robot.hear(/yesterday bookings/, function(msg) {
         yesterday_bookings(msg.envelope.message.room);
     });
 }
