@@ -20,11 +20,10 @@ module.exports = function(robot) {
                 let yesterday = clock.yesterday();
                 console.log('yesterday date: ' + yesterday);
                 robot.http('http://online.travelcompositor.com/resources/booking/getBookings')
-                .query({'from': clock.yesterday(), 'to': yesterday})
+                .query({'from': yesterday, 'to': yesterday})
                 .header('Accept', 'application/json')
                 .header('auth-token', auth.token)
                 .get()(function(err, resp, body) {
-                    console.log(body);
                     let bookings = JSON.parse(body);
                     let bookings_count = bookings_mapper.count(bookings);
                     robot.send({room: room}, phrase_builder.build(bookings_count));
