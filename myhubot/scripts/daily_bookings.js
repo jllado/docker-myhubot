@@ -18,6 +18,7 @@ module.exports = function(robot) {
             .get()(function(err, resp, body) {
                 let auth = JSON.parse(body);
                 let yesterday = clock.yesterday();
+                console.log('yesterday date: ' + yesterday);
                 robot.http('http://online.travelcompositor.com/resources/booking/getBookings')
                 .query({'from': clock.yesterday(), 'to': yesterday})
                 .header('Accept', 'application/json')
