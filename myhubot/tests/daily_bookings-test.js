@@ -81,15 +81,13 @@ describe('Daily bookings', function() {
     afterEach(function() {
         bookings_mapper.count.restore();
     });
-  	it('should announce the new record', function() {
+  	it('should save and announce the new record', function() {
     	expect(this.room.messages).to.eql([
         	['whatever_user', '@hubot yesterday bookings'], 
         	['hubot', 'Ayer tuvimos 16 reservas :smile:'], 
         	['hubot', '¡Hemos batido el record de reservas diarias! :muscle:'], 
     	]);
-  	});
-  	it('should save the new record', function() {
     	expect(this.room.robot.brain.get('record')).to.eql(16);
-   	});
+  	});
   });
 });
