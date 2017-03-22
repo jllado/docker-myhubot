@@ -35,7 +35,7 @@ module.exports = function(robot) {
                 });
             });
     };
-    cron.schedule('00 09 * * *', function() {
+    cron.schedule('00 00 * * *', function() {
         yesterday_bookings('-197523822'); //telegram group id
     });
     robot.hear(/yesterday bookings/, function(msg) {
