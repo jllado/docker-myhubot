@@ -2,7 +2,7 @@
 //   Daily bookings
 //
 
-var cron = require('node-cron');
+var CronJob = require('cron').CronJob;
 var clock = require('../domain/clock.js');
 var bookings_mapper = require('../domain/bookings_mapper.js')
 var phrase_builder = require('../domain/phrase_builder.js');
@@ -35,10 +35,15 @@ module.exports = function (robot) {
           });
       });
   };
-  cron.schedule('00 00 * * *', function () {
-    yesterday_bookings('-197523822'); //telegram group id
-  });
   robot.hear(/yesterday bookings/, function (msg) {
     yesterday_bookings(msg.envelope.message.room);
   });
+  new CronJob('00 09 * * *', function() {
+      var telegram_room = '-197523822';
+      yesterday_bookings(telegram_room);
+    },
+    null,
+    true,
+    'Europe/Madrid'
+  );
 }
