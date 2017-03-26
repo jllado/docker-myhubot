@@ -6,11 +6,11 @@ var CronJob = require('cron').CronJob;
 var bookings_mapper = require('../domain/bookings_mapper.js')
 var phrase_builder = require('../domain/phrase_builder.js');
 var bookings_record = require('../domain/bookings_record.js');
-var travelc_user = process.env.TRAVELC_USER || 'user';
-var travelc_pass = process.env.TRAVELC_PASS || 'pass';
 
 module.exports = function (robot) {
   var yesterday_bookings = function (room) {
+    let travelc_user = process.env.TRAVELC_USER || 'user';
+    let travelc_pass = process.env.TRAVELC_PASS || 'pass';
     robot.http('http://online.travelcompositor.com/resources/authentication/getAuthToken')
       .query({'microsite': 'default', 'username': travelc_user, 'password': travelc_pass})
       .header('Accept', 'application/json')
