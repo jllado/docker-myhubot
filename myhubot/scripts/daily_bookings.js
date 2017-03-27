@@ -3,6 +3,7 @@
 //
 
 var CronJob = require('cron').CronJob;
+var clock = require('../domain/clock.js');
 var bookings_mapper = require('../domain/bookings_mapper.js')
 var phrase_builder = require('../domain/phrase_builder.js');
 var bookings_record = require('../domain/bookings_record.js');
