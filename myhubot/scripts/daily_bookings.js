@@ -4,14 +4,15 @@
 
 var CronJob = require('cron').CronJob;
 var clock = require('../domain/clock.js');
+var enviorenment = require('../domain/environment');
 var bookings_mapper = require('../domain/bookings_mapper.js')
 var phrase_builder = require('../domain/phrase_builder.js');
 var bookings_record = require('../domain/bookings_record.js');
 
 module.exports = function (robot) {
   var yesterday_bookings = function (room) {
-    let travelc_user = process.env.TRAVELC_USER || 'user';
-    let travelc_pass = process.env.TRAVELC_PASS || 'pass';
+    let travelc_user = enviorenment.get('TRAVELC_USER');
+    let travelc_pass =  enviorenment.get('TRAVELC_PASS');
     robot.http('http://online.travelcompositor.com/resources/authentication/getAuthToken')
       .query({'microsite': 'default', 'username': travelc_user, 'password': travelc_pass})
       .header('Accept', 'application/json')

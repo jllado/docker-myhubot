@@ -9,6 +9,10 @@ var helper = new Helper('../scripts/daily_bookings.js');
 
 describe('Daily bookings', function () {
   beforeEach(function () {
+    enviorenment = require('../domain/environment.js');
+    let stubEnviorenment = sinon.stub(enviorenment, "get");
+    stubEnviorenment.withArgs('TRAVELC_USER').returns("user")
+    stubEnviorenment.withArgs('TRAVELC_PASS').returns("pass")
     clock = require('../domain/clock.js');
     sinon.stub(clock, "yesterday", function () {
       return '20170311';
@@ -31,6 +35,7 @@ describe('Daily bookings', function () {
     this.room.destroy();
     nock.cleanAll();
     clock.yesterday.restore();
+    enviorenment.get.restore();
   });
 
   context('user says yesterday bookings', function () {
