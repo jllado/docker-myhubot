@@ -39,7 +39,7 @@ module.exports = function (robot) {
     yesterday_bookings(msg.envelope.message.room);
   });
   new CronJob('00 09 * * *', function() {
-      var telegram_room = '-197523822';
+      var telegram_room = '-197645752';
       yesterday_bookings(telegram_room);
     },
     null,
