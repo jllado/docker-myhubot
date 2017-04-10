@@ -16,3 +16,7 @@ services:
     restart: always
     volumes:
         - /opt/servers/mongodb/data:/data/db
+networks:
+    default:
+        external:
+            name: myjenkins_default
