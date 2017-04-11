@@ -26,6 +26,7 @@ ENV HUBOT_JENKINS_AUTH=user:token
 ENV TRAVELC_USER=user
 ENV TRAVELC_PASS=pass
 ENV MONGODB_URL=mongodb://myhubot_mongo_1/hubot-brain
+ENV PORT=1234
 
 # create hubot
 RUN yo hubot --adapter ${HUBOT_ADAPTER} --owner ${HUBOT_OWNER} --name ${HUBOT_NAME} --description ${HUBOT_DESCRIPTION} --defaults --no-insight
