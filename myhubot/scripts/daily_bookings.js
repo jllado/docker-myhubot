@@ -7,6 +7,7 @@ var clock = require('../domain/clock.js');
 var enviorenment = require('../domain/environment');
 var bookings_mapper = require('../domain/bookings_mapper.js')
 var phrase_builder = require('../domain/phrase_builder.js');
+var room_notifier = require('../domain/room_notifier.js');
 var bookings_record = require('../domain/bookings_record.js');
 
 module.exports = function (robot) {
@@ -26,10 +27,10 @@ module.exports = function (robot) {
           .get()(function (err, resp, body) {
             let bookings = JSON.parse(body);
             let bookings_count = bookings_mapper.count(bookings);
-            robot.send({room: room}, phrase_builder.build(bookings_count));
+            room_notifier.send(robot, room, phrase_builder.build(bookings_count));
             let record = bookings_record.get(robot);
             if (bookings_count > record) {
-              robot.send({room: room}, '¡Hemos batido el record de reservas diarias! :muscle:');
+              room_notifier.send(robot, room, '¡Hemos batido el record de reservas diarias! :muscle:');
               bookings_record.save(robot, bookings_count);
             }
           });
