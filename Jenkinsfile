@@ -17,4 +17,21 @@ pipeline {
             }
         }
     }
+    post { 
+        success { 
+            script {
+                sh 'curl -s ' + "http://myhubot_hubot_1:1234/build/${env.JOB_NAME}/success"
+            }
+        }
+        unstable { 
+            script {
+                sh 'curl -s ' + "http://myhubot_hubot_1:1234/build/${env.JOB_NAME}/unstable"
+            }
+        }
+        failure { 
+            script {
+                sh 'curl -s ' + "http://myhubot_hubot_1:1234/build/${env.JOB_NAME}/failure"
+            }
+        }
+    }
 }
