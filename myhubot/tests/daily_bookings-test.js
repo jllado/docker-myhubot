@@ -95,4 +95,22 @@ describe('Daily bookings', function () {
       expect(this.room.robot.brain.get('record')).to.eql(16);
     });
   });
+  context('user says yesterday bookings given auth problem', function () {
+    beforeEach(function () {
+      nock.cleanAll();
+      nock('http://online.travelcompositor.com')
+        .get('/resources/authentication/getAuthToken')
+        .query({microsite: 'default', username: 'user', password: 'pass'})
+        .reply(401, ["Error retrieving auth token"]);
+      return co(function*() {
+        return yield this.room.user.say('whatever_user', '@hubot yesterday bookings');
+      }.bind(this));
+    });
+    it('should says there is an auth problem', function () {
+      expect(this.room.messages).to.eql([
+        ['whatever_user', '@hubot yesterday bookings'],
+        ['hubot', 'No se han podido consultar las reservas. No estoy autorizado :cry:'],
+      ]);
+    });
+  });
 });

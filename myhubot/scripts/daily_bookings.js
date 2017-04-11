@@ -18,6 +18,10 @@ module.exports = function (robot) {
       .query({'microsite': 'default', 'username': travelc_user, 'password': travelc_pass})
       .header('Accept', 'application/json')
       .get()(function (err, resp, body) {
+        if (resp.statusCode !== 200) {
+          room_notifier.send(robot, room, 'No se han podido consultar las reservas. No estoy autorizado :cry:');
+          return;
+        }
         let auth = JSON.parse(body);
         let yesterday = clock.yesterday();
         robot.http('http://online.travelcompositor.com/resources/booking/getBookings')
