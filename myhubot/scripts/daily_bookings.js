@@ -14,7 +14,7 @@ module.exports = function (robot) {
   var yesterday_bookings = function (room) {
     let travelc_user = enviorenment.get('TRAVELC_USER');
     let travelc_pass =  enviorenment.get('TRAVELC_PASS');
-    robot.http('http://online.travelcompositor.com/resources/authentication/getAuthToken')
+    robot.http('https://online.travelcompositor.com/resources/authentication/getAuthToken')
       .query({'microsite': 'default', 'username': travelc_user, 'password': travelc_pass})
       .header('Accept', 'application/json')
       .get()(function (err, resp, body) {
@@ -24,7 +24,7 @@ module.exports = function (robot) {
         }
         let auth = JSON.parse(body);
         let yesterday = clock.yesterday();
-        robot.http('http://online.travelcompositor.com/resources/booking/getBookings')
+        robot.http('https://online.travelcompositor.com/resources/booking/getBookings')
           .query({'from': yesterday, 'to': yesterday})
           .header('Accept', 'application/json')
           .header('auth-token', auth.token)
